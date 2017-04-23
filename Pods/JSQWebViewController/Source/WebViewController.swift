@@ -139,9 +139,10 @@ open class WebViewController: UIViewController {
         title = urlRequest.url?.host
 
         if presentingViewController?.presentedViewController != nil {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
-                                                               target: self,
-                                                               action: #selector(didTapDoneButton(_:)))
+            //navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
+                 //                                              target: self,
+                                                              // action: #selector(didTapDoneButton(_:)))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Назад", style: .done, target: self, action: #selector(didTapDoneButton(_:)))
         }
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
