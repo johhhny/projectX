@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import PKHUD
 import JSQWebViewController
+import UIColor_Hex_Swift
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -127,14 +128,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    }
     override func viewDidDisappear(_ animated: Bool) {
         //test = nil
     }
     override func viewWillAppear(_ animated: Bool) {
         print("asdasdads")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(showFullscreenImage))
         imageQuestion.addGestureRecognizer(tap)
@@ -315,15 +322,15 @@ extension ViewController: UITableViewDataSource {
             if test.isVerified {
                 for value in (test.arrayOfTasks[section][row].arrayOfAnswers) {
                     if test.arrayOfTasks[section][row].enteredAnswers == value {
-                        cell.backgroundColor = UIColor.green
-                        cell.numberLabel.textColor = UIColor.white
+                        cell.backgroundColor = UIColor("#0fff17")
+                        cell.numberLabel.textColor = UIColor.black
                         break
                     } else if test.arrayOfTasks[section][row].enteredAnswers == "" {
-                        cell.backgroundColor = UIColor.yellow
+                        cell.backgroundColor = UIColor("#fced3f")
                         cell.numberLabel.textColor = UIColor.black
                     } else {
-                        cell.backgroundColor = UIColor.red
-                        cell.numberLabel.textColor = UIColor.white
+                        cell.backgroundColor = UIColor("#ff0000")
+                        cell.numberLabel.textColor = UIColor.black
                     }
                 }
             }
