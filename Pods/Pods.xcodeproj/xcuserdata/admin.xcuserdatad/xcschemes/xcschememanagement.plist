@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIColor_Hex_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,12 +42,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>216979DC70B06952E6A2F0198685CBD7</key>
+		<key>3ECF42EC0067A98D417563F7CA1A2FFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3ECF42EC0067A98D417563F7CA1A2FFD</key>
+		<key>7D15F1CABA6E8E1F4623AE13B086A8A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>D7A75F149082140741FC1E0B5B2863C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F756E1AA7D4CAD80C6A3C96EE897B811</key>
 		<dict>
 			<key>primary</key>
 			<true/>
